@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+	<button id="btn1">test</button>
+	<script type="text/javascript">
+		console.log(100)
+		setTimeout(function () {
+			console.log(200)
+		}, 1000)
+		console.log(300)
+
+		console.log(100)
+		alert(200)
+		console.log(300)
+
+		console.log('start')
+		$.get('/yibu-test.json', function (data) {
+			console.log(data)
+		})
+		var img = document.createElement('img')
+		img.onload = function () {
+			console.log('loaded')
+		}
+		img.src = ''
+		var btn1 = document.getElementById('btn1')
+		btn1.addEventListener('click', function () {
+			console.log('clicked')
+		})
+		console.log('end')
+	</script>
+</body>
+</html>
